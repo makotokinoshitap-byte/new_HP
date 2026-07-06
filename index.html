@@ -405,7 +405,7 @@
   <h2>プロフィール</h2>
   <div class="profile">
     <div class="profile-photo-frame">
-      <img src="assets/profile.jpg" alt="Macoto" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
+      <img src="assets/profile.jpg" alt="Macoto" onerror="if(!this.dataset.png){this.dataset.png=1;this.src='assets/profile.png';}else{this.style.display='none';this.nextElementSibling.style.display='flex';}">
       <div class="profile-photo-fallback" style="display:none;">写真</div>
     </div>
     <div class="profile-body">
